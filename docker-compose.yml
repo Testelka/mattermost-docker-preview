@@ -1,0 +1,9 @@
+services:
+  mattermost:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: always
+    ports:
+      - 8065:8065
+    platform: linux/x86_64
